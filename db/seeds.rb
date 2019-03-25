@@ -132,27 +132,48 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+<<<<<<< HEAD
 # REVIEWS
 
+=======
+>>>>>>> feature/product-ratings
 puts "Re-creating Reviews ..."
 
 Review.destroy_all
 
 Review.create!(
   user_id: 1,
+<<<<<<< HEAD
   product_id: 1,
   description: 'This is great!',
+=======
+  product_id: 12,
+  description: 'This is Great!',
+  rating: 5
+  )
+
+Review.create!(
+  user_id: 1,
+  product_id: 11,
+  description: 'This is Great!',
+>>>>>>> feature/product-ratings
   rating: 5
   )
 
 Review.create!(
   user_id: 2,
+<<<<<<< HEAD
   product_id: 1,
   description: 'This is ok',
+=======
+  product_id: 12,
+  description: 'This is OK.',
+>>>>>>> feature/product-ratings
   rating: 3
   )
 
 Review.create!(
+<<<<<<< HEAD
   user_id: 3,
   product_id: 1,
   description: 'This sucks!',
@@ -165,5 +186,12 @@ Review.create!(
   description: 'This is great!',
   rating: 5
   )
+=======
+  user_id: 13,
+  product_id: 12,
+  description: 'This sucks!',
+  rating: 1
+  )
+>>>>>>> feature/product-ratings
 
 puts "DONE!"
